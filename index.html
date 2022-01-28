@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convert Base</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convert Base</title>
+  <!-- link css  -->
+  <link rel="stylesheet" href="style.css">
+  <!-- tailwind css  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- custom config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
 </head>
+
 <body>
-    
+  <div class="main w-2/4 my-16 mx-auto p-24">
+    <h1 class="text-5xl text-center font-bold">Number Converter</h1>
+    <form action="">
+      <div class="flex justify-between py-10">
+        <input type="Number" placeholder="Enter a number" class="rounded-lg w-4/5 px-4 py-2 drop-shadow-2xl bg-gray-200">
+        <button class="btn btn-outline border-gray-300 border-2 px-5 py-2 ml-10 rounded-lg text-white font-semibold">Convert</button> 
+      </div>
+
+      <div class="">
+        <h3 class="text-center text-3xl font-semibold">Result</h3>
+        <input type="Number" placeholder="--Binary" class="my-3 rounded-lg w-full drop-shadow-2xl px-4 py-2 bg-gray-200">
+        <input type="Number" placeholder="--Octal" class="my-3 rounded-lg w-full drop-shadow-2xl px-4 py-2 bg-gray-200">
+        <input type="Number" placeholder="--Hex" class="my-3 rounded-lg w-full drop-shadow-2xl px-4 py-2 bg-gray-200">
+      </div>
+    </form>
+  </div>
+
+
+  <script src="./app.js"></script>
+
 </body>
+
 </html>

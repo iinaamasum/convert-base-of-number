@@ -24,23 +24,25 @@
   </script>
 </head>
 
-<body>
+<body class="bg-gray-700">
   <div class="main w-11/12 md:w-2/4 my-16 mx-auto p-6 lg:p-24">
     <h1 class="text-5xl text-center font-bold">Number Converter</h1>
     <form action="">
       <div class="lg:flex text-center justify-between py-10">
-        <input type="Number" placeholder="Enter a number"
+        <input id="decimal" type="Number" placeholder="Enter a number"
           class="rounded-lg w-full lg:w-4/5 px-4 py-2 drop-shadow-2xl bg-gray-200">
-        <button
+        <button id="submit"
           class="btn btn-outline border-gray-300 border-2 px-5 py-2 my-4 lg:my-0 lg:ml-10 rounded-lg text-white font-semibold">Convert</button>
       </div>
 
       <div class="">
         <h3 class="text-center text-3xl font-semibold">Result</h3>
-        <input type="Number" placeholder="--Binary"
-          class="my-3 rounded-lg w-full drop-shadow-2xl px-4 py-2 bg-gray-200">
-        <input type="Number" placeholder="--Octal" class="my-3 rounded-lg w-full drop-shadow-2xl px-4 py-2 bg-gray-200">
-        <input type="Number" placeholder="--Hex" class="my-3 rounded-lg w-full drop-shadow-2xl px-4 py-2 bg-gray-200">
+        <input id="binary" type="Number" placeholder="--Binary"
+          class="placeholder:italic placeholder:text-black placeholder:text-xl my-3 rounded-lg w-full drop-shadow-2xl px-4 py-2 bg-gray-200">
+        <input id="octal" type="Number" placeholder="--Octal"
+          class="placeholder:italic placeholder:text-black placeholder:text-xl my-3 rounded-lg w-full drop-shadow-2xl px-4 py-2 bg-gray-200">
+        <input id="hex" type="Number" placeholder="--Hex"
+          class="placeholder:italic placeholder:text-black placeholder:text-xl my-3 rounded-lg w-full drop-shadow-2xl px-4 py-2 bg-gray-200">
       </div>
     </form>
   </div>

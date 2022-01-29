@@ -13,17 +13,25 @@ function outputNumber(e) {
     const inputNumber = document.getElementById('decimal').value;
     console.log(inputNumber);
 
+    const bgRed = document.querySelector('input');
+
     // checking number
     if (inputNumber < 0) {
+        bgRed.classList.remove('bg-green-300');
+        bgRed.classList.add('bg-red-400');
         showBinary.placeholder = `Please enter a positive number.`;
         showOctal.placeholder = `Please enter a positive number.`;
         showHex.placeholder = `Please enter a positive number.`;
     } else if (inputNumber === '') {
+        bgRed.classList.remove('bg-green-300');
+        bgRed.classList.add('bg-red-400');
         showBinary.placeholder = `Please enter a valid number.`;
         showOctal.placeholder = `Please enter a valid number.`;
         showHex.placeholder = `Please enter a valid number.`;
-        
+
     } else {
+        bgRed.classList.remove('bg-red-400');
+        bgRed.classList.add('bg-green-300');
         // converting number  
         const binaryNum = Number(inputNumber).toString(2);
         const octalNum = Number(inputNumber).toString(8);
